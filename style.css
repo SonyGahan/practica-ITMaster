@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+#contenedor{
+    width: 100%;
+}
+
+#contenedor > *{
+    float: left;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(49, 6, 68);
+    padding: 0 15px;
+    box-sizing: border-box;
+    height: 80px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding:0;
+    margin: 0;
+}
+
+nav ul li{
+    width: 20%;    
+}
+
+nav ul li a{
+    background-color: rgb(140, 6, 180);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    transition:1s;
+}
+
+nav ul li a:hover{
+    background-color: orange;
+}
+
+header ul li a{
+    padding: 20px;
+    font-weight: bold;
+    color:beige; 
+    text-decoration: none;
+    font-size: 13px;
+}
+
+header ul li a:hover{
+    padding: 20px;
+    font-weight: bold;
+    color:rgb(245, 116, 56); 
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+#articulos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+#articulos article{
+    transition: 1s;
+}
+
+#articulos article:hover{
+    transform: scale(1.2);
+}
+
+#articulos article img{
+    border-radius: 5px;
+}
+
+#articulos article h2{
+    font-weight: bold;
+    color:rgb(233, 82, 13); 
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+#articulos article p{
+    font-weight: bold;
+    color:rgb(77, 27, 4); 
+    text-decoration: none;
+    font-size: 13px;
+    text-align: left;
+}
+
+#quienes{
+    width: 90%;
+    margin: 0 5%;
+    padding: 15px;
+}
+
+#quienes h3{
+    text-align: center;
+}
+
+#quienes p{
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width:640px){
+    nav ul li,header ul li{
+        font-size: 12px;
+    }
+    header ul li a{
+        padding: 20px 10px;
+    }
+    #articulos{
+        flex-wrap: wrap;
+    }
+    #quienes{
+        width: 90%;
+        margin: 0 5%;
+    }
+}
